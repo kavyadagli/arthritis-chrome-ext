@@ -24,23 +24,14 @@
     <!-- <button id="changeColor"></button> -->
     <div>
       <h1 class="color-theme"> Did you experience morning stiffness? </h1>
-      <form id="question" class="color-theme" action="">
-        <input type="radio" name="Yes"> yes<br>
-        <input type="radio" name="A Little"> a little<br>
-        <input type="radio" name="No" value="No"> no <br>
+      <form id="question" class="color-theme" onclick="test()">
+        <input type="radio" name="mornStiff" value="yes">  yes<br>
+        <input type="radio" name="mornStiff" value="a little"> a little<br>
+        <input type="radio" name="mornStiff" value="No"> no <br>
       </form>
     </div>
     <script src="popup.js"></script>
 
-
-    <script>
-
-    function test() {
-      value = document.getElementById('question')
-      alert()
-    }
-
-    </script>
 
 
   </body>
