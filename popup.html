@@ -21,15 +21,54 @@
     </style>
   </head>
   <body>
-    <!-- <button id="changeColor"></button> -->
+
     <div>
       <h1 class="color-theme"> Did you experience morning stiffness? </h1>
+<<<<<<< HEAD
       <form id="question1" class="color-theme">
         <input id="yes" type="radio" name="mornStiff" value="yes">  yes<br>
         <input id="medium" type="radio" name="mornStiff" value="a little"> a little<br>
         <input id="no" type="radio" name="mornStiff" value="No"> no <br>
+=======
+      <form id="question" class="color-theme" onclick="test()">
+        <input type="radio" name="mornStiff" value="yes">Yes<br>
+        <input type="radio" name="mornStiff" value="medium">A little<br>
+        <input type="radio" name="mornStiff" value="no"> No <br>
+>>>>>>> ca22fdc6f2fa474506954b0306ce307c1ccef6cb
       </form>
+
+      <h1 class="color-theme"> Did you take your medicine today? </h1>
+        <form id="question" class="color-theme" onclick="test()">
+          <input type="radio" name="mornStiff" value="yes">Yes<br>
+          <input type="radio" name="mornStiff" value="no">No<br>
+          <br>
+        </form>
+
+        <h1 class="color-theme"> Were you able to write without pain today? </h1>
+          <form id="question" class="color-theme" onclick="test()">
+            <input type="radio" name="mornStiff" value="yes">Yes<br>
+            <input type="radio" name="mornStiff" value="no">No<br>
+            <br>
+          </form>
+
+        <h1 class="color-theme"> Were you really fatigued? </h1>
+          <form id="question" class="color-theme" onclick="test()">
+            <input type="radio" name="mornStiff" value="yes">Yes<br>
+            <input type="radio" name="mornStiff" value="no">No<br>
+            <br>
+          </form>
+
+        <h1 class="color-theme"> Was walking long distances difficult for you? </h1>
+          <form id="question" class="color-theme" onclick="test()">
+            <input type="radio" name="mornStiff" value="yes">Yes<br>
+            <input type="radio" name="mornStiff" value="no">No<br>
+            <br>
+          </form>
+
     </div>
+
+    <button type="button" name="next">Next</button>
+
     <script src="popup.js"></script>
     <button id="next"
 
