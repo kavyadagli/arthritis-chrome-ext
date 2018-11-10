@@ -21,14 +21,11 @@ var info = {};
 let form = document.getElementById('question1');
 form.addEventListener('click', function() {
   yes = document.getElementById('yes').value;
-  medium = document.getElementById('medium').value;
   no = document.getElementById('no').value;
 
   if (yes.clicked) {
-    dict[1] = "yes";
-  } else if (medium.clicked) {
-    dict[1] = "a little";
+    dict[1] = 1;
   } else if (no.clicked) {
-    dict[1] = "no";
+    dict[1] = 0;
   }
 });
