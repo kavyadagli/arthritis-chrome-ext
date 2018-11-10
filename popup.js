@@ -14,10 +14,7 @@
 // };
 
 
-
-function test() {
-  value = document.getElementById('question').value;
-  console.log(value);
-}
-
-let value = document.getElementById('question');
+let form = document.getElementsById('question');
+form.addEventListener('click', function() {
+  console.log(form.value);
+});
