@@ -48,7 +48,8 @@ button.addEventListener('click', function() {
   } else if (idx == questions.length) {
     button.style.display = "none";
     document.getElementById('question').innerHTML = "";
-    document.getElementById("textbox").style.visible = "block";
+    document.getElementById("textbox").style.display = "block";
+    document.getElementById("notesLabel").style.display = "block";
   }
   if (idx < questions.length) {
     document.getElementById("title").innerHTML = questions[idx];
