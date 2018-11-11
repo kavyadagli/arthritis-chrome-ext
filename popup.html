@@ -1,77 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      HTML {
-        height: 50%;
-        width: 400px;
-      }
-
-      button {
-        outline: none;
-      }
-      .color-theme {
-        color: #5DCDE3;
-      }
-
-      form { font-size: 15px;}
-
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Pavanam"
+  rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="popup.css">
   </head>
   <body>
 
-    <div id="question-list">
-      <div id="question1">
-        <h1 class="color-theme"> Did you experience morning stiffness? </h1>
-        <form id="form1" class="color-theme">
-          <input type="radio" name="mornStiff" value="yes">Yes<br>
-          <input type="radio" name="mornStiff" value="no"> No <br>
+
+      <h1 class="color-theme"> Did you experience morning stiffness? </h1>
+      <form class="answers" id="question1" onclick="test()">
+        <input type="radio" name="ans" value="yes" class="radioBs">
+        <label>Yes</label> <br>
+        <input type="radio" name="ans" value="no" class="radioBs">
+        <label>No</label>
+      </form>
+
+      <h1 class="color-theme"> Did you take your medicine today? </h1>
+        <form class="answers" id="question2" onclick="test()">
+          <input type="radio" name="ans" value="yes" class="radioBs">
+          <label>Yes</label> <br>
+          <input type="radio" name="ans" value="no" class="radioBs">
+          <label>No</label>
         </form>
-      </div>
 
-      <div id="question2">
-        <h1 class="color-theme"> Did you take your medicine today? </h1>
-          <form id="question2" class="color-theme">
-            <input type="radio" name="mornStiff" value="yes">Yes<br>
-            <input type="radio" name="mornStiff" value="no">No<br>
-            <br>
+        <h1 class="color-theme"> Were you able to write without pain today? </h1>
+          <form class="answers" id="question3" onclick="test()">
+            <input type="radio" name="ans" value="yes" class="radioBs">
+            <label>Yes</label> <br>
+            <input type="radio" name="ans" value="no" class="radioBs">
+            <label>No</label>
           </form>
-     </div>
 
-      <div id="question3">
-          <h1 class="color-theme"> Were you able to write without pain today? </h1>
-            <form id="question3" class="color-theme">
-              <input type="radio" name="mornStiff" value="yes">Yes<br>
-              <input type="radio" name="mornStiff" value="no">No<br>
-              <br>
-            </form>
-      </div>
+        <h1 class="color-theme"> Were you really fatigued? </h1>
+          <form class="answers" id="question4" onclick="test()">
+            <input type="radio" name="ans" value="yes" class="radioBs" id="hi">
+            <label>Yes</label> <br>
+            <input type="radio" name="ans" value="no" class="radioBs">
+            <label>No</label>
+          </form>
 
-
-      <div id="question4">
-          <h1 class="color-theme"> Were you really fatigued? </h1>
-            <form id="question4" class="color-theme">
-              <input type="radio" name="mornStiff" value="yes">Yes<br>
-              <input type="radio" name="mornStiff" value="no">No<br>
-              <br>
-            </form>
-      </div>
+        <h1 class="color-theme"> Was walking long distances difficult for you? </h1>
+          <form class="answers" id="question5" onclick="test()">
+            <input type="radio" name="ans" value="yes" class="radioBs">
+            <label>Yes</label> <br>
+            <input type="radio" name="ans" value="no" class="radioBs">
+            <label>No</label>
+          </form>
 
 
-      <div id="question5">
-          <h1 class="color-theme"> Was walking long distances difficult for you? </h1>
-            <form id="question5" class="color-theme" onclick="test()">
-              <input type="radio" name="mornStiff" value="yes">Yes<br>
-              <input type="radio" name="mornStiff" value="no">No<br>
-              <br>
-            </form>
-      </div>
-
-    </div>
+    <br><br>
 
     <button id="next" type="button" name="next">Next</button>
-
+    
     <script src="popup.js"></script>
+
 
 
   </body>
