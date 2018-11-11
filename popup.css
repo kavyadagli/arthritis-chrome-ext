@@ -17,21 +17,6 @@ button {
 	text-decoration:none;
 }
 
-
-.myButton {
-	background-color:#be564e;
-	-moz-border-radius:12px;
-	-webkit-border-radius:12px;
-	border-radius:12px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Verdana;
-	font-size:16px;
-	padding:14px 30px;
-	text-decoration:none;
-}
-
 button:hover {
   background-color:#db8983;
   color: white;
