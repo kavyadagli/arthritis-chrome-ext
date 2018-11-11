@@ -1,6 +1,6 @@
 HTML {
-  height: 50%;
-  width: 400px;
+  height: 75%;
+  width: 500px;
 }
 
 button {
@@ -66,4 +66,18 @@ label {
 
 #questions {
   font: 13px/1 'Open Sans', sans-serif;
+}
+
+canvas {
+  margin-botton: 10px;
+}
+
+#summary {
+  margin: 10px;
+  color: #7FBBBD;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
 }

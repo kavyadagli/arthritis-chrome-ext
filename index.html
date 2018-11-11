@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing Firebase</title>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+	<!-- <script type="text/javascript" src="src.js"></script> -->
+</head>
+<body>
+	<h1>Testing Firebase</h1>
+	<h2>Write Some Data</h2>
+	<h3>Some date as the 'key'</h3>
+	<input type="text" name="date" id="date"><br>
+	<h3>Some number from ML model as 'value'</h3>
+	<input type="number" name="value" id="value"><br>
+	<br><button onclick="addToDatabase()">Add to DB</button><br>
+	<hr>
+	<h2>Read Some Data</h2>
+	<h3>Date to get value for</h3>
+	<input type="text" name="date2" id="date2"><br>
+	<br><button onclick="getFromDatabase()">Get from DB</button>
+	<p id="output"></p>
+
+<script type="text/javascript">
+// Initialize Firebase
+var config = {
+	apiKey: "AIzaSyAuElShiaaeXkVWgOa3ZVMkBm8jJOKrd14",
+	authDomain: "arthur-itis.firebaseapp.com",
+	databaseURL: "https://arthur-itis.firebaseio.com",
+	projectId: "arthur-itis",
+	storageBucket: "arthur-itis.appspot.com",
+	messagingSenderId: "200912976862"
+};
+firebase.initializeApp(config);
+
+var database = firebase.database();
+var returned;
+
+function writeUserData(date, value) {
+	returned = firebase.database().ref('weeklyData/' + date).set({
+		Value: value,
+	});
+	document.getElementById("output").innerHTML = returned;
+}
+
+function addToDatabase() {
+	var date = document.getElementById("date").value;
+	var value = document.getElementById("value").value;
+
+	writeUserData(date, value);
+}
+
+function readData(date) {
+	return firebase.database().ref('/weeklyData/' + date).once('value').then(function(snapshot) {
+		var value = (snapshot.val().Value);
+		document.getElementById("output").innerHTML = value;
+	})
+}
+
+function getFromDatabase() {
+	var date = document.getElementById("date2").value;
+
+	readData(date);
+}
+</script>
+</body>
+</html>

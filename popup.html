@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UFT-8">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Pavanam"
   rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="popup.css">
@@ -8,6 +9,13 @@
   <body>
 
     <div id="question-list">
+
+    <div id="end-screen">
+      <canvas id="myCanvas"></canvas>
+      <div id="summary">
+        <h1><strong>Summary</strong><h1>
+      </div>
+    </div>
 
     <div id="question">
       <h1 class="color-theme" id="title"> Did you experience morning stiffness? </h1>
@@ -21,15 +29,11 @@
 
 </div>
 
-
-
     <br><br>
 
     <button id="next" type="button" name="next">Next</button>
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
     <script src="popup.js"></script>
-
-
 
   </body>
 </html>
