@@ -47,7 +47,8 @@ button.addEventListener('click', function() {
     button.innerHTML= "Done";
   } else if (idx == questions.length) {
     button.style.display = "none";
-    document.getElementById('question').innerHTML = "Thank you!";
+    document.getElementById('question').innerHTML = "";
+    document.getElementById("textbox").style.visible = "block";
   }
   if (idx < questions.length) {
     document.getElementById("title").innerHTML = questions[idx];

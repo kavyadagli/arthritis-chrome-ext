@@ -13,8 +13,10 @@ button {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	padding:14px 30px;
+	padding:10px 20px;
+  letter-spacing: 2px;
 	text-decoration:none;
+  border: none;
 }
 
 button:hover {
@@ -78,4 +80,8 @@ label {
 
 #questions {
   font: 13px/1 'Open Sans', sans-serif;
+}
+
+#textbox{
+  font-size: 20px;
 }
