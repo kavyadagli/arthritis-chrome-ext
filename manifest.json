@@ -26,6 +26,5 @@
 
   "manifest_version": 2,
 
-  "content_security_policy":
-      "sandbox allow-scripts; script-src 'self' 'unsafe-eval' https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"
+  "content_security_policy": "sandbox allow-scripts; script-src 'self' 'unsafe-eval' https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js https://requirejs.org/docs/release/2.3.5/minified/require.js"
 }

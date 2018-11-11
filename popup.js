@@ -1,19 +1,32 @@
-// Initialize Firebase
-var config = {
-	apiKey: "AIzaSyAuElShiaaeXkVWgOa3ZVMkBm8jJOKrd14",
-	authDomain: "arthur-itis.firebaseapp.com",
-	databaseURL: "https://arthur-itis.firebaseio.com",
-	projectId: "arthur-itis",
-	storageBucket: "arthur-itis.appspot.com",
-	messagingSenderId: "200912976862"
-};
-firebase.initializeApp(config);
 
-var database = firebase.database();
+"use strict";
 
+// import regression from 'regression';
 
 //store question answers
 var info = new Map();
+
+function getPercentage(info) {
+	var count = 0;
+	if (info.get(1)) {
+		count++;
+	}
+	if (info.get(2) == 0) {
+		count++;
+	}
+	if (info.get(3) == 0) {
+		count++;
+	}
+	if (info.get(4)) {
+		count++;
+	}
+	if (info.get(5)) {
+		count++;
+	}
+	return count*0.2;
+}
+
+
 
 var questions = [
   "Did you experience morning stiffness?",
@@ -43,7 +56,6 @@ button.addEventListener('click', function() {
     button.innerHTML= "Done";
   } else if (idx == questions.length) {
     button.style.display = "none";
-<<<<<<< HEAD
     document.getElementById('question').style.display = "none";
     document.getElementById('end-screen').style.display = "block";
     document.getElementById('myCanvas').style.display = "block";
@@ -66,7 +78,7 @@ button.addEventListener('click', function() {
           datasets: [{
             backgroundColor: 'rgb(108, 189, 190)',
             borderColor: 'rgb(255, 255, 255)',
-            data: [.30,.54,.75,.,7,6,5],
+            data: [.30,.54,.75,.56,.68,getPercentage(info),.32],
           }]
         },
 
@@ -101,13 +113,9 @@ button.addEventListener('click', function() {
         }
     });
 
-=======
-    document.getElementById('question').innerHTML = "";
-    document.getElementById("textbox").style.display = "block";
-    document.getElementById("notesLabel").style.display = "block";
->>>>>>> 050bb53f5cdbe0e243cb3fd5b5846fc8ab416d08
   }
   if (idx < questions.length) {
     document.getElementById("title").innerHTML = questions[idx];
+    regression();
   }
 });
