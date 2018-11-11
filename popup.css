@@ -90,12 +90,13 @@ canvas {
 #summary {
   margin: 10px;
   color: #7FBBBD;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 15px;
   border-style: solid;
   border-color: lightgray;
   border-width: 1px;
 =======
+
 #textbox {
   font: 13px/1 'Open Sans', sans-serif;
   display: none;
