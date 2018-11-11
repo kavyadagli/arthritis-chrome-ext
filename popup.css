@@ -6,19 +6,33 @@ HTML {
 button {
   color: #507b9b;
   font: 13px/1 'Open Sans', sans-serif;
-  padding: 5px;
-  background: white
+  background-color:#be564e;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:10px 20px;
+  letter-spacing: 2px;
+	text-decoration:none;
+  border: none;
 }
 
-button:hover, button:active {
-  background: lightgray;
+button:hover {
+  background-color:#db8983;
   color: white;
   border: none;
 }
 
+button:active {
+  position:relative;
+  top:1px;
+}
+
 .color-theme {
   color: #507b9b;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 30px;
   font-weight: normal;
 }
@@ -68,6 +82,7 @@ label {
   font: 13px/1 'Open Sans', sans-serif;
 }
 
+<<<<<<< HEAD
 canvas {
   margin-botton: 10px;
 }
@@ -80,4 +95,26 @@ canvas {
   border-style: solid;
   border-color: lightgray;
   border-width: 1px;
+=======
+#textbox {
+  font: 13px/1 'Open Sans', sans-serif;
+  display: none;
+  border: 1px solid rgba(145,171,188,0.4);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  outline:0;
+  height:100%;
+  width: 80%;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#notesLabel {
+  color: #507b9b;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  display: none;
+>>>>>>> 050bb53f5cdbe0e243cb3fd5b5846fc8ab416d08
 }

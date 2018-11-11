@@ -43,6 +43,7 @@ button.addEventListener('click', function() {
     button.innerHTML= "Done";
   } else if (idx == questions.length) {
     button.style.display = "none";
+<<<<<<< HEAD
     document.getElementById('question').style.display = "none";
     document.getElementById('end-screen').style.display = "block";
     document.getElementById('myCanvas').style.display = "block";
@@ -100,6 +101,11 @@ button.addEventListener('click', function() {
         }
     });
 
+=======
+    document.getElementById('question').innerHTML = "";
+    document.getElementById("textbox").style.display = "block";
+    document.getElementById("notesLabel").style.display = "block";
+>>>>>>> 050bb53f5cdbe0e243cb3fd5b5846fc8ab416d08
   }
   if (idx < questions.length) {
     document.getElementById("title").innerHTML = questions[idx];
